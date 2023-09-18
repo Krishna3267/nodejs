@@ -1,0 +1,20 @@
+JS can be runned inside a browser
+V8 engine developed by google compiles JavaScript into machine code
+Node.js is a program written in C++
+It wraps the V8 engine.
+We can directly run JS on a computer or a server and not just a browser using node.
+
+Adds extra functionalities to JS like
+1. Read and write files on the computer
+2. Connect to database
+3. Act as a server for content
+
+Acts as a server side language
+Node lost the feature of DOM since it is runned outside the browser.
+Due to node computers can now understand javascript and can compile it down to machine code
+
+Role of Node.js
+-> Run JS on backend or server side and handle requests coming in from a browser. 
+-> 
+
+
