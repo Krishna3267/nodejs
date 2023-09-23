@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+// const xyz = require("something")
 
 // fs.writeFile('./docs/blog3.txt', 'Hello krishna', (err) =>{
 //     if(err){
@@ -9,8 +9,9 @@ const fs = require('fs');
 //     }
 // })
 
-const readStream = fs.createReadStream('./docs/blog3.txt' , {encoding : 'utf8'})
-const writeStream = fs.createWriteStream('./docs/blog5.txt');
+const readStream = fs.createReadStream('./docs/blog4.txt' , {encoding : 'utf8'})
+const writeStream = fs.createWriteStream('./docs/pipefile.txt');
+
 // readStream.on('data', (chunk) => {
 //     console.log('----New Chunck---')
 //     console.log(chunk)
