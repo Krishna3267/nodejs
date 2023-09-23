@@ -2,6 +2,21 @@ const fs = require('fs')
 
 //reading files
 
+// fs.readFile(path of the file to read , what to do when we read file)
+
+// fs.readFile(`./docs/${__filename}` , (err , shivi) => {
+//     if(err){
+//         console.log(err)
+//     }
+//     else
+//         console.log(shivi.toString())
+// })
+
+
+// function(args)
+
+//sort(begin , end , (){}
+
 // fs.readFile('./docs/blogs1.txt' , (error, data) =>{
 //     if(error){
 //         console.log(error);
@@ -12,10 +27,25 @@ const fs = require('fs')
 // console.log('Last')
 
 //Writing files 
-
-// fs.writeFile('./docs/blogs1.txt' , 'Dont this instead', ()=>{
-//     console.log('Wrting done')
+// let mydata = "hellos";
+// fs.readFile('./docs/blog3.txt' , (err , data) =>{
+//     if(err){
+//         console.log(err)
+//     }else{
+//         mydata = data.toString()
+//         console.log(mydata)
+//     }
 // })
+
+// // let letsee = ""
+// setTimeout(
+//     () => {
+//         fs.writeFile('./docs/blogs1.txt' , mydata, ()=>{
+//             console.log('Wrting 3 to 1 done')
+//         }
+//         )
+//     } 
+// , 10000)
 
 // fs.writeFile('./docs/blogs2.txt' , 'Dont this instead', (err)=>{
 //     console.log('Wrting done')
@@ -55,3 +85,12 @@ const fs = require('fs')
 
 
 
+
+
+fs.readFile("./docs/blogs1.txt" , (err , data)=>{
+    console.log(data.toString())
+})
+
+fs.writeFile("./docs/blogs1.txt" , "ifhuw" , (err)=>{
+    console.log(err);
+})
