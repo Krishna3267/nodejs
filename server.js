@@ -5,10 +5,11 @@ const _ = require('lodash');
 //you can store the server if you want to but you dont have to
 
 // const server = http.createServer((req, res) => {
-//     // console.log('Request made');
-//     console.log(req.url , req.method) 
+//     console.log('Request obj');
+//     console.log(req.url + " " + req.method) 
 //     res.setHeader('Content-type', 'text/html')
-//     res.write('<p>Hey krishna</p>')
+//     // res.sendFile('xyz.html')
+//     res.write(`<p>Hey ${req.url}</p>`)
 //     res.write('<p>Hey krishna again</p>')
 //     res.end()
 // })
@@ -16,13 +17,13 @@ const _ = require('lodash');
 const server = http.createServer((req, res) => {
 
     //lodash
-    const num = _.random(0,20)
-    console.log(num)
-    const greet = _.once(() => {
-        console.log('hello')
-    })
-    greet()
-    greet()
+    // const num = _.random(0,20)
+    // console.log(num)
+    // const greet = _.once(() => {
+    //     console.log('hello')
+    // })
+    // greet()
+    // greet()
     // console.log('Request made');
     console.log(req.url , req.method) 
     res.setHeader('Content-type', 'text/html')
