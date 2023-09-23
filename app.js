@@ -7,16 +7,8 @@ const app = express()
 //register view engine
 app.set('view engine' , 'ejs')
 
-let url = `https://jsonmock.hackerrank.com/api/football_matches?year=${year}&team1=${team}`
+// let url = `https://jsonmock.hackerrank.com/api/football_matches?year=${year}&team1=${team}`
 
-
-let func = async () => {
-    
-}
-
-data.forEach((d) => {
-
-})
 
 //create a server and listen to requests
 app.listen(3000)
@@ -48,7 +40,7 @@ app.get('/about-us' , (req,res) => {
 
 
 //404 page -- put this at the end 
-//use is for middleware -- use it for every single request but if a response is sent before itslef, it wont fire 
+//use is for middleware -- use it for every single request. But if a response is sent before itslef, it wont fire 
 app.use((req,res) => {
     res.status(404).sendFile('./views/404.html', {root : __dirname})
 
